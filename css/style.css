@@ -1,27 +1,100 @@
 .wrapper{
-
+    background: linear-gradient(#0c92da, #2874a8);
+    padding-top: 40px;
+    min-height: 1000px;
 }
+
+.order_form{
+    max-width: 1000px;
+    margin: auto;
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px 100px 0 100px;
+}
+
 .first_row{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     flex-wrap: wrap;
-    padding: 20px;
-}
-
-.second_row{
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-
-.third_row{
-
+    margin-bottom: 10px;
 }
 
 .first_row .form-control{
-    min-width: 300px;
+    min-width: 280px;
 }
 
-.third_row .form-control{
-    max-width: 80px;
+.btn .caret {
+    margin-left: 20px;
 }
+
+.parcel_row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.parcel_row .form-group{
+    max-width: 150px;
+    text-align: center;
+}
+
+.pallet_row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.pallet_row .form-group{
+    max-width: 150px;
+    text-align: center;
+}
+
+.make_order{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

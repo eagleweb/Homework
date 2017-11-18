@@ -6,76 +6,112 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
     <div class="wrapper">
-        <div>
+        <div class="order_form">
             <form class="form-inline first_row">
                 <div class="input-group">
                     <div class="input-group-btn">
-                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
-                            Действие <span class="caret"></span>
+                        <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown">
+                            Belgium <span class="caret"></span>
                         </button>
                         <ul class="dropdown-menu">
-                            <li><a href="#">Действие</a></li>
-                            <li><a href="#">Другое действие</a></li>
+                            <li><a href="#">Germany</a></li>
+                            <li><a href="#">USA</a></li>
                         </ul>
                     </div>
-                    <input type="text" class="form-control">
+                    <input type="text" class="form-control" placeholder="ZIP code, Address">
                 </div>
                 <div class="input-group">
                     <div class="input-group-btn">
-                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
-                            Действие <span class="caret"></span>
+                        <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown">
+                            Belgium <span class="caret"></span>
                         </button>
                         <ul class="dropdown-menu">
-                            <li><a href="#">Действие</a></li>
-                            <li><a href="#">Другое действие</a></li>
+                            <li><a href="#">Germany</a></li>
+                            <li><a href="#">USA</a></li>
                         </ul>
                     </div>
-                    <input type="text" class="form-control">
+                    <input type="text" class="form-control" placeholder="ZIP code, Address">
                 </div>
             </form>
-            <!--<div class="second_row">-->
-                <!--<p></p>-->
-                <!--<label for="weight_1">Weight:</label>-->
-                <!--<label for="length_1">Lenght:</label>-->
-                <!--<label for="width_1">Width:</label>-->
-                <!--<label for="height_1">Height:</label>-->
-            <!--</div>-->
-            <form class="form-group third_row">
-                <!--<div class="checkbox">-->
-                    <!--<input type="checkbox" data-toggle="toggle" data-width="100" data-offstyle="primary" data-on="PARCEL" data-off="PALLET">-->
-                <!--</div>-->
+            <form class="form-group parcel_row">
+                <div class="checkbox">
+                    <input type="checkbox" checked data-toggle="toggle" data-width="100" data-offstyle="primary" data-on="PARCEL" data-off="PALLET">
+                </div>
                 <div class="form-group">
-                <label for="weight_1">Weight:</label>
-                <div class="input-group">
-                    <input type="text" class="form-control" placeholder="Kg" id="weight_1">
-                    <span class="input-group-addon">Kg</span>
+                    <label for="weight_1">Weight:</label>
+                    <div class="input-group">
+                        <input type="text" class="form-control" id="weight_1">
+                        <span class="input-group-addon">Kg</span>
+                    </div>
                 </div>
+                <div class="form-group">
+                    <label for="length_1">Lenght:</label>
+                    <div class="input-group">
+                        <input type="text" class="form-control" id="length_1">
+                        <span class="input-group-addon">Cm</span>
+                    </div>
                 </div>
-                <!--<label for="length_1">Lenght:</label>-->
-                <!--<div class="input-group">-->
-                    <!--<input type="text" class="form-control" placeholder="Cm" id="length_1">-->
-                    <!--<span class="input-group-addon">Cm</span>-->
-                <!--</div>-->
-                <!--<label for="width_1">Width:</label>-->
-                <!--<div class="input-group">-->
-                    <!--<input type="text" class="form-control" placeholder="Cm" id="width_1">-->
-                    <!--<span class="input-group-addon">Cm</span>-->
-                <!--</div>-->
-                <!--<label for="height_1">Height:</label>-->
-                <!--<div class="input-group">-->
-                    <!--<input type="text" class="form-control" placeholder="Cm" id="height_1">-->
-                    <!--<span class="input-group-addon">Cm</span>-->
-                <!--</div>-->
+                <div class="form-group">
+                    <label for="width_1">Width:</label>
+                    <div class="input-group">
+                        <input type="text" class="form-control" id="width_1">
+                        <span class="input-group-addon">Cm</span>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="height_1">Height:</label>
+                    <div class="input-group">
+                        <input type="text" class="form-control" id="height_1">
+                        <span class="input-group-addon">Cm</span>
+                    </div>
+                </div>
             </form>
+        </div>
+        <div class="order_form">
+            <form class="form-group pallet_row">
+                <div class="checkbox">
+                    <input type="checkbox" data-toggle="toggle" data-width="100" data-offstyle="primary" data-on="PARCEL" data-off="PALLET">
+                </div>
+                <div class="form-group">
+                    <label for="pcs_1">Number of pallets:</label>
+                    <div class="input-group">
+                        <input type="text" class="form-control" id="pcs_1">
+                        <span class="input-group-addon">Pcs</span>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="height_2">Hieght:</label>
+                    <div class="input-group">
+                        <input type="text" class="form-control" id="height_2">
+                        <span class="input-group-addon">Cm</span>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="weight_2">Weith of pallet:</label>
+                    <div class="input-group">
+                        <input type="text" class="form-control" id="weight_2">
+                        <span class="input-group-addon">Kg</span>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="make_order">
+            <div>
+                <button type="button" class="btn btn-primary">- Remove</button>
+                <button type="button" class="btn btn-primary">+ Add parcel or pallet</button>
+            </div>
+            <div>
+                <button type="button" class="btn btn-danger">Quote & Book</button>
+            </div>
         </div>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">
     <script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
 </body>
 </html>
