@@ -15,3 +15,7 @@ function AddElementToShop() {
 
     parentElem.appendChild(div);
 }
+
+function Book() {
+
+}
