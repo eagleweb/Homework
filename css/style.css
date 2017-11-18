@@ -1,0 +1,27 @@
+.wrapper{
+
+}
+.first_row{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.second_row{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.third_row{
+
+}
+
+.first_row .form-control{
+    min-width: 300px;
+}
+
+.third_row .form-control{
+    max-width: 80px;
+}
