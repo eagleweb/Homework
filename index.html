@@ -72,37 +72,39 @@
                 </div>
             </form>
         </div>
-        <div class="order_form">
-            <form class="form-group pallet_row">
-                <div class="checkbox">
-                    <input type="checkbox" data-toggle="toggle" data-width="100" data-offstyle="primary" data-on="PARCEL" data-off="PALLET">
-                </div>
-                <div class="form-group">
-                    <label for="pcs_1">Number of pallets:</label>
-                    <div class="input-group">
-                        <input type="text" class="form-control" id="pcs_1">
-                        <span class="input-group-addon">Pcs</span>
+        <div id="shop">
+            <div class="order_form">
+                <form class="form-group pallet_row">
+                    <div class="checkbox">
+                        <input type="checkbox" data-toggle="toggle" data-width="100" data-offstyle="primary" data-on="PARCEL" data-off="PALLET">
                     </div>
-                </div>
-                <div class="form-group">
-                    <label for="height_2">Hieght:</label>
-                    <div class="input-group">
-                        <input type="text" class="form-control" id="height_2">
-                        <span class="input-group-addon">Cm</span>
+                    <div class="form-group">
+                        <label for="pcs_1">Number of pallets:</label>
+                        <div class="input-group">
+                            <input type="text" class="form-control" id="pcs_1">
+                            <span class="input-group-addon">Pcs</span>
+                        </div>
                     </div>
-                </div>
-                <div class="form-group">
-                    <label for="weight_2">Weith of pallet:</label>
-                    <div class="input-group">
-                        <input type="text" class="form-control" id="weight_2">
-                        <span class="input-group-addon">Kg</span>
+                    <div class="form-group">
+                        <label for="height_2">Hieght:</label>
+                        <div class="input-group">
+                            <input type="text" class="form-control" id="height_2">
+                            <span class="input-group-addon">Cm</span>
+                        </div>
                     </div>
-                </div>
-            </form>
+                    <div class="form-group">
+                        <label for="weight_2">Weith of pallet:</label>
+                        <div class="input-group">
+                            <input type="text" class="form-control" id="weight_2">
+                            <span class="input-group-addon">Kg</span>
+                        </div>
+                    </div>
+                </form>
+            </div>
         </div>
         <div class="make_order">
             <div>
-                <button type="button" class="btn btn-primary">- Remove</button>
+                <button type="button" class="btn btn-primary" onclick="RemoveElementFromShop()">- Remove</button>
                 <button type="button" class="btn btn-primary">+ Add parcel or pallet</button>
             </div>
             <div>
@@ -113,5 +115,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
+    <script src="./js/js.js"></script>
 </body>
 </html>
