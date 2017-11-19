@@ -5,16 +5,23 @@ function RemoveLastElementFromShop() {
 
 function AddElementToShop() {
     var parentElem = document.getElementById('shop');
-    var item = document.getElementById('item-input-form').cloneNode(true);
-    var fragment = document.createDocumentFragment();
-    fragment.appendChild(item);
-
-    var div = document.createElement('div');
-    div.className = "order_form";
-    div.appendChild(fragment);
-
-    parentElem.appendChild(div);
+    var link = document.querySelector('link[rel=import]');
+    var template = link.import.querySelector('.order_form').cloneNode(true);
+    parentElem.appendChild(template);
 }
+
+// function AddElementToShop() {
+//     var parentElem = document.getElementById('shop');
+//     var item = document.getElementById('item-input-form').cloneNode(true);
+//     var fragment = document.createDocumentFragment();
+//     fragment.appendChild(item);
+//
+//     var div = document.createElement('div');
+//     div.className = "order_form";
+//     div.appendChild(fragment);
+//
+//     parentElem.appendChild(div);
+// }
 
 function Book() {
 
