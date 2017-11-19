@@ -1,3 +1,11 @@
+var form = document.getElementById("myForm");
+
+form.addEventListener("submit", function(event) {
+    var result = {};
+    console.log(form.elements);
+    event.preventDefault();
+});
+
 function RemoveLastElementFromShop() {
     var elem = document.getElementById('shop').lastElementChild;
     elem.remove();
@@ -22,7 +30,3 @@ function AddElementToShop() {
 //
 //     parentElem.appendChild(div);
 // }
-
-function Book() {
-
-}
