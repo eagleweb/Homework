@@ -23,26 +23,22 @@
     margin-left: 20px;
 }
 
-.parcel_row{
+.parcel{
+    display: none;
+}
+
+.pallet{
+
+}
+
+.order_row{
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
 }
 
-.parcel_row .form-group{
-    max-width: 150px;
-    text-align: center;
-}
-
-.pallet_row{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-.pallet_row .form-group{
+.order_row .form-group{
     max-width: 150px;
     text-align: center;
 }

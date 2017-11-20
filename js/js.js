@@ -17,12 +17,10 @@ function AddElementToShop() {
     parentElem.appendChild(template);
 
     $(function() {
-        $('.toggle_template').bootstrapToggle({
-            on: 'PARCEL',
-            off: 'PALLET'
-        });
+        $('.toggle_template').bootstrapToggle();
     })
 }
+
 
 // function AddElementToShop() {
 //     var parentElem = document.getElementById('shop');
