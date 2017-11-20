@@ -1,7 +1,6 @@
 var form = document.getElementById("myForm");
 
 form.addEventListener("submit", function(event) {
-    var result = {};
     console.log(form.elements);
     event.preventDefault();
 });
@@ -16,6 +15,13 @@ function AddElementToShop() {
     var link = document.querySelector('link[rel=import]');
     var template = link.import.querySelector('.order_form').cloneNode(true);
     parentElem.appendChild(template);
+
+    $(function() {
+        $('.toggle_template').bootstrapToggle({
+            on: 'PARCEL',
+            off: 'PALLET'
+        });
+    })
 }
 
 // function AddElementToShop() {
