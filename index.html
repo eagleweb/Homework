@@ -16,33 +16,35 @@
                 <div class="form-inline first_row">
                         <div class="input-group">
                             <div class="input-group-btn">
-                                <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown">
-                                    Belgium <span class="caret"></span>
+                                <button type="button" name="country_from" class="btn btn-info dropdown-toggle" data-toggle="dropdown" value="Belgium">
+                                    Belgium<span class="caret"></span>
                                 </button>
                                 <ul class="dropdown-menu">
                                     <li><a href="#">Germany</a></li>
                                     <li><a href="#">USA</a></li>
+                                    <li><a href="#">Italy</a></li>
                                 </ul>
                             </div>
-                            <input type="text" class="form-control" placeholder="ZIP code, Address">
+                            <input type="text" class="form-control" name="address_from" placeholder="ZIP code, Address">
                         </div>
                         <div class="input-group">
                             <div class="input-group-btn">
-                                <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown">
+                                <button type="button" name="country_to" class="btn btn-info dropdown-toggle" data-toggle="dropdown">
                                     Belgium <span class="caret"></span>
                                 </button>
                                 <ul class="dropdown-menu">
                                     <li><a href="#">Germany</a></li>
                                     <li><a href="#">USA</a></li>
+                                    <li><a href="#">Italy</a></li>
                                 </ul>
                             </div>
-                            <input type="text" class="form-control" placeholder="ZIP code, Address">
+                            <input type="text" class="form-control" name="address_to" placeholder="ZIP code, Address">
                         </div>
                 </div>
                 <div class="form-group order_row">
-                    <div class="checkbox">
+                    <div class="checkbox" onclick="CheckBox(1)">
                             <input type="checkbox" id="toggle_1" checked data-toggle="toggle" data-width="100" data-offstyle="primary" data-on="PARCEL" data-off="PALLET">
-                        </div>
+                    </div>
                     <div id="item_1">
                         <div class="form-group">
                                 <label>Weight:</label>
@@ -92,21 +94,21 @@
             <div class="form-group">
                 <label>Number of pallets:</label>
                 <div class="input-group">
-                    <input type="text" name="pallet_numbers" class="form-control">
+                    <input type="text" name="pallet_numbers<%-number%>" class="form-control">
                     <span class="input-group-addon">Pcs</span>
                 </div>
             </div>
             <div class="form-group">
                 <label>Hieght:</label>
                 <div class="input-group">
-                    <input type="text" name="pallet_hieght" class="form-control">
+                    <input type="text" name="pallet_hieght<%-number%>" class="form-control">
                     <span class="input-group-addon">Cm</span>
                 </div>
             </div>
             <div class="form-group">
                 <label>Weight of pallet:</label>
                 <div class="input-group">
-                    <input type="text" name="pallet_weight" class="form-control">
+                    <input type="text" name="pallet_weight<%-number%>" class="form-control">
                     <span class="input-group-addon">Kg</span>
                 </div>
             </div>
@@ -117,28 +119,28 @@
             <div class="form-group">
                 <label>Weight:</label>
                 <div class="input-group">
-                    <input type="text" name="parcel_weight" class="form-control">
+                    <input type="text" name="parcel_weight<%-number%>" class="form-control">
                     <span class="input-group-addon">Kg</span>
                 </div>
             </div>
             <div class="form-group">
                 <label>Lenght:</label>
                 <div class="input-group">
-                    <input type="text" name="parcel_lenght" class="form-control">
+                    <input type="text" name="parcel_lenght<%-number%>" class="form-control">
                     <span class="input-group-addon">Cm</span>
                 </div>
             </div>
             <div class="form-group">
                 <label>Width:</label>
                 <div class="input-group">
-                    <input type="text" name="parcel_width" class="form-control">
+                    <input type="text" name="parcel_width<%-number%>" class="form-control">
                     <span class="input-group-addon">Cm</span>
                 </div>
             </div>
             <div class="form-group">
                 <label>Height:</label>
                 <div class="input-group">
-                    <input type="text" name="parcel_height" class="form-control">
+                    <input type="text" name="parcel_height<%-number%>" class="form-control">
                     <span class="input-group-addon">Cm</span>
                 </div>
             </div>
@@ -147,35 +149,35 @@
     <script type="text/template" id="row">
         <div class="order_form">
             <div class="form-group order_row">
-                <div class="checkbox">
+                <div class="checkbox" onclick="CheckBox(<%-number%>)">
                     <input type="checkbox" id="toggle_<%-number%>" class="toggle_template" checked data-toggle="toggle" data-width="100" data-offstyle="primary" data-on="PARCEL" data-off="PALLET">
                 </div>
                 <div id="item_<%-number%>">
                     <div class="form-group">
                         <label>Weight:</label>
                         <div class="input-group">
-                            <input type="text" name="parcel_weight" class="form-control">
+                            <input type="text" name="parcel_weight<%-number%>" class="form-control">
                             <span class="input-group-addon">Kg</span>
                         </div>
                     </div>
                     <div class="form-group">
                         <label>Lenght:</label>
                         <div class="input-group">
-                            <input type="text" name="parcel_lenght" class="form-control">
+                            <input type="text" name="parcel_lenght<%-number%>" class="form-control">
                             <span class="input-group-addon">Cm</span>
                         </div>
                     </div>
                     <div class="form-group">
                         <label>Width:</label>
                         <div class="input-group">
-                            <input type="text" name="parcel_width" class="form-control">
+                            <input type="text" name="parcel_width<%-number%>" class="form-control">
                             <span class="input-group-addon">Cm</span>
                         </div>
                     </div>
                     <div class="form-group">
                         <label>Height:</label>
                         <div class="input-group">
-                            <input type="text" name="parcel_height" class="form-control">
+                            <input type="text" name="parcel_height<%-number%>" class="form-control">
                             <span class="input-group-addon">Cm</span>
                         </div>
                     </div>

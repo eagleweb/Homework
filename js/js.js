@@ -13,6 +13,7 @@ form.addEventListener("submit", function(event) {
 function RemoveLastElementFromShop() {
     var elem = document.getElementById('shop').lastElementChild;
     elem.remove();
+    count--;
 }
 
 function AddElementToShop() {
@@ -29,44 +30,19 @@ function AddElementToShop() {
 function Pallet(id) {
     $('#item_' + id).empty();
     var elem = document.getElementById('item_' + id);
-    var result = pallet_tmpl();
+    var result = pallet_tmpl({number: id});
     elem.insertAdjacentHTML("beforeEnd", result);
 }
 
 function Parcel(id) {
     $('#item_'+id).empty();
     var elem = document.getElementById('item_'+id);
-    var result = parcel_tmpl();
+    var result = parcel_tmpl({number: id});
     elem.insertAdjacentHTML("beforeEnd", result);
 }
 
-$(function() {
-    $('#toggle_1').change(function() {
-        $(this).prop('checked') === true ? Parcel(1) : Pallet(1)
+function CheckBox(id) {
+    $('#toggle_'+id).change(function() {
+        $(this).prop('checked') === true ? Parcel(id) : Pallet(id)
     })
-});
-
-// function AddElementToShop() {
-//     var parentElem = document.getElementById('shop');
-//     var link = document.querySelector('link[rel=import]');
-//     var template = link.import.querySelector('.order_form').cloneNode(true);
-//     parentElem.appendChild(template);
-//
-//     $(function() {
-//         $('.toggle_template').bootstrapToggle();
-//     })
-// }
-
-
-// function AddElementToShop() {
-//     var parentElem = document.getElementById('shop');
-//     var item = document.getElementById('item-input-form').cloneNode(true);
-//     var fragment = document.createDocumentFragment();
-//     fragment.appendChild(item);
-//
-//     var div = document.createElement('div');
-//     div.className = "order_form";
-//     div.appendChild(fragment);
-//
-//     parentElem.appendChild(div);
-// }
+}
