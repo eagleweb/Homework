@@ -40,6 +40,12 @@ function Parcel(id) {
     elem.insertAdjacentHTML("beforeEnd", result);
 }
 
+$(function() {
+    $('#toggle_1').change(function() {
+        $(this).prop('checked') === true ? Parcel(1) : Pallet(1)
+    })
+});
+
 // function AddElementToShop() {
 //     var parentElem = document.getElementById('shop');
 //     var link = document.querySelector('link[rel=import]');
